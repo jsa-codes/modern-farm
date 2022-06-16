@@ -6,23 +6,24 @@ import { catalog } from './catalog.js';
 
 console.log('Welcome to the main module');
 
+// Create Plan - (plan.js)
 // Call the createPlan function, store the result of that function in a variable "yearlyPlan"
 const yearlyPlan = createPlan();
-// Output the value of yearlyPlan to the console
 console.log(yearlyPlan);
 
-// Plant Seeds
+// Plant Seeds - (🚜 tractor.js)
 plantSeeds(yearlyPlan);
 
-// Use Plants
+// * Use Plants & Add Plants- (field.js)
 const plantedSeeds = usePlants();
 
-// Harvest Plants
+// Harvest Plants - (from harvester.js)
 const harvestedPlants = harvestPlants(plantedSeeds);
 console.log(harvestedPlants);
 
-// Catalog Plants
+// Catalog Plants - (catalog.js)
 catalog(harvestedPlants);
+
 // Render Catalog in the Browser
 const parentHTML = document.querySelector('.container');
 parentHTML.innerHTML = catalog(harvestedPlants);
@@ -56,11 +57,11 @@ TEST LOGIC FOR SEEDS PRODUCING MODULE
 
 // Checking Logic on Newly Created Object
 
-const celery = {
-  type: 'Celery',
-  height: 15,
-};
+// const celery = {
+//   type: 'Celery',
+//   height: 15,
+// };
 
-const addCelery = addPlant(celery);
-const useCelery = usePlants(addCelery);
-console.log(useCelery);
+// const addCelery = addPlant(celery);
+// const useCelery = usePlants(addCelery);
+// console.log(useCelery);
