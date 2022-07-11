@@ -16,6 +16,7 @@ plantSeeds(yearlyPlan);
 
 // * Use Plants & Add Plants- (field.js)
 const plantedSeeds = usePlants();
+addPlant(plantedSeeds);
 
 // Harvest Plants - (from harvester.js)
 const harvestedPlants = harvestPlants(plantedSeeds);

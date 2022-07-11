@@ -25,6 +25,7 @@ export const addPlant = (maybeArrayOfSeeds) => {
 
 // STEP 5) Define and Export a function called usePlants.
 // This function should RETURN a COPY of the array of plantsGrowingInField.
+//
 export const usePlants = () => {
   return plantsGrowingInField.map((plants) => ({ ...plants }));
 };

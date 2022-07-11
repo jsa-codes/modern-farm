@@ -11,8 +11,10 @@ export const harvestPlants = (growingPlantsArray) => {
     // On each plant get the value of the output "property"
     //      Need to store the result of the output in a variable
     //      It will hold the output value each time we iterate the array
+    // Output is a property on each seed Object
     let output = plant.output;
     // STEP 7) IF the plant is corn then divide the output in half
+    //  Type is a property on th each seed object
     if (plant.type === 'Corn') {
       output /= 2;
     }

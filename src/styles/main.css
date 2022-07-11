@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .red {
     background-color: darksalmon;
+    
 }
 
 .plants {
@@ -43,11 +44,20 @@ h1,h2,h3,h4,h5,h6 {
 
 .container {
     background-color: cornsilk;
-    display: flex;
+    /* ⬇️ FLEXBOX SETTINGS */
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center; */
+
+
+    /* ⬇️ GRID SETTINGS */
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
     align-items: center;
+    text-align: center;
+    
     height: 100vh;
 }
 
